@@ -24,7 +24,8 @@
     "name": "spk-cache",
     "description": "",
     "version": "1.0.5",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "directories": {
         "lib": "dist"
     },
