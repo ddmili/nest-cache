@@ -4,7 +4,7 @@
       "outDir": "./test-dist"
     },
     "include": [
-      "./lib",
+      "./dist",
       "./test"
     ]
   }
