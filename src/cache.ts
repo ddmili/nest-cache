@@ -59,15 +59,14 @@ export class Cache {
   }
 
   public set(key: string, value: string) {
-    return this.con.set(key,value);
+    return this.con.set(key, value);
   }
 
-
-  public disconnect(){
+  public disconnect() {
     return this.con.disconnect();
   }
 
-  public unsubscribe(key:string){
+  public unsubscribe(key: string) {
     return this.con.unsubscribe(key);
   }
 }

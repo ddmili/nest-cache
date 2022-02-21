@@ -4,7 +4,7 @@ declare type Client = IORedisClient | IORedisCluster;
 import Redlock from 'redlock';
 
 export class Locker {
-  private con:Client;
+  private con: Client;
   private locker: Redlock;
   constructor(conf: Redis.RedisOptions) {
     this.con = new Redis(conf);
@@ -24,7 +24,7 @@ export class Locker {
     return this.locker.acquire(resources, duration);
   }
 
-  public disconnect(){
+  public disconnect() {
     this.con.disconnect();
   }
 }

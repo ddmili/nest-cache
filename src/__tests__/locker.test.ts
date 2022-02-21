@@ -9,7 +9,7 @@ test('Test locker', async () => {
 
 test('Test cache', async () => {
   const cache = new Cache({ host: 'localhost', port: 6379, password: '123456' });
-  await cache.set('test','test')
+  await cache.set('test', 'test');
   expect(await cache.get('test')).toBe('test');
   cache.disconnect();
 });
