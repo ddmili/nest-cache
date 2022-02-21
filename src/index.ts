@@ -1,1 +1,2 @@
-export const Greeter = (name: string) => `Hello ${name}`;
+export * from './cache';
+export * from './locker';
