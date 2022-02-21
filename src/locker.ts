@@ -5,7 +5,6 @@ import Redlock from 'redlock';
 import { Store } from './store';
 
 export class Locker extends Store {
-
   public static getInstance(conf: Redis.RedisOptions): Locker {
     return new Locker(conf);
   }
@@ -26,5 +25,4 @@ export class Locker extends Store {
   public getLocker(resources: string[], duration: number) {
     return this.locker.acquire(resources, duration);
   }
-
 }

@@ -4,10 +4,9 @@ import { Store } from './store';
 declare type Client = IORedisClient | IORedisCluster;
 
 export class Cache extends Store {
-
-    public static getInstance(conf: Redis.RedisOptions): Cache {
-        return new Cache(conf);
-      }
+  public static getInstance(conf: Redis.RedisOptions): Cache {
+    return new Cache(conf);
+  }
 
   constructor(conf: Redis.RedisOptions) {
     super(conf);
