@@ -10,9 +10,5 @@ export class Cache extends Store {
 
   constructor(conf: Redis.RedisOptions) {
     super(conf);
-    this.con = new Redis(conf);
-    this.con.on('ready', () => {
-      console.info('IORedis ready');
-    });
   }
 }
